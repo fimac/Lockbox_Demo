@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_ciphertext: MyText
+  email_ciphertext: MyText
+  suburb_ciphertext: MyText
+  verified_ciphertext: MyText
+  age_ciphertext: MyText
+  latitude_ciphertext: MyText
+  dob_ciphertext: MyText
+
+two:
+  name_ciphertext: MyText
+  email_ciphertext: MyText
+  suburb_ciphertext: MyText
+  verified_ciphertext: MyText
+  age_ciphertext: MyText
+  latitude_ciphertext: MyText
+  dob_ciphertext: MyText

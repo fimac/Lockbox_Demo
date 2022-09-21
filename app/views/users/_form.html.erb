@@ -1,0 +1,52 @@
+<%= form_with(model: user) do |form| %>
+  <% if user.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name_ciphertext, style: "display: block" %>
+    <%= form.text_area :name_ciphertext %>
+  </div>
+
+  <div>
+    <%= form.label :email_ciphertext, style: "display: block" %>
+    <%= form.text_area :email_ciphertext %>
+  </div>
+
+  <div>
+    <%= form.label :suburb_ciphertext, style: "display: block" %>
+    <%= form.text_area :suburb_ciphertext %>
+  </div>
+
+  <div>
+    <%= form.label :verified_ciphertext, style: "display: block" %>
+    <%= form.text_area :verified_ciphertext %>
+  </div>
+
+  <div>
+    <%= form.label :age_ciphertext, style: "display: block" %>
+    <%= form.text_area :age_ciphertext %>
+  </div>
+
+  <div>
+    <%= form.label :latitude_ciphertext, style: "display: block" %>
+    <%= form.text_area :latitude_ciphertext %>
+  </div>
+
+  <div>
+    <%= form.label :dob_ciphertext, style: "display: block" %>
+    <%= form.text_area :dob_ciphertext %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
